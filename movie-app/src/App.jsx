@@ -1,10 +1,12 @@
-import './App.css'
+
+import MovieCart from './component/MovieCart/MovieCart'
 
 function App() {
 
   return (
     <>
-      <h1>Movie Store</h1>
+      <MovieCart/>
+      
     </>
   )
 }
