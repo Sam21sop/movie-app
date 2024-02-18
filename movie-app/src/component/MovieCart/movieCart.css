@@ -81,9 +81,9 @@ body{
 }
 
 .footer .stars{
-    width: 30px;
-    height: 30px;
-    margin: 10px;
+    width: 17px;
+    height: 17px;
+    margin: 5px;
 }
 
 .footer .star-dis{
@@ -101,8 +101,8 @@ body{
 }
 
 .inc-dec{
-    height: 20px;
-    width: 20px;
+    height: 7px;
+    width: 7px;
 }
 
 
@@ -111,7 +111,7 @@ body{
     font-size: 15px;
     padding: 7px, 10px;
     text-shadow: none;
-    border-radius: 7px;
+    border-radius: 5px;
     border: none;
     font-weight: 600;
     margin: 5px;
