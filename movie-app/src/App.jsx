@@ -1,12 +1,11 @@
-
-import MovieCart from './component/MovieCart/MovieCart'
+import MoviesList from './component/MoviesList/moviesList';
 
 function App() {
 
   return (
     <>
-      <MovieCart/>
-      
+      <h1>Movie App</h1>
+      <MoviesList/>
     </>
   )
 }

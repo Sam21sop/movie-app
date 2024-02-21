@@ -3,42 +3,9 @@ import './movieCart.css';
 
 export default class MovieCart extends Component{
 
-    constructor(){
-        super();
-        this.state = {
-            imgUrl: "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
-            title: "The Avenger",
-            plot: "This are real hero to destroy everything.",
-            price: 999,
-            rating: 4.9,
-            stars: 0
-        }
-    }
-
-    addStar = () => {
-        // setState first form
-        // this.setState({
-        //     stars: this.state.stars + 0.5
-        // })
-
-        // setState second form
-        this.setState((prevState) => {
-            return {
-                stars: prevState.stars + 0.5
-            }
-        })
-    }
-
-
-    removeStar = () => {
-        this.setState({
-            stars: this.state.stars - 0.5
-        })
-    }
-
-
     render(){
-        const {imgUrl, title, plot, price, rating, stars} = this.state;
+        // const {imgUrl, title, plot, price, rating, stars, fav, cart} = this.props;
+        const {imgUrl, title, plot, price, rating, stars, fav, cart} = this.props.movieObject;
         return (
             <>
                 <div className="main">
@@ -63,8 +30,16 @@ export default class MovieCart extends Component{
                                     <img src="https://cdn-icons-png.flaticon.com/128/992/992651.png" alt="increament" className="inc-dec" onClick={this.addStar}/>
                                     <span className="stars">{stars}</span>
                                 </div>
-                                <button className="fav-btn" >Favourite</button>
-                                <button className="cart-btn">Add to Cart</button>
+
+                                {/* favortie un-favrote button  */}
+                                <button className={fav ? "unfav-btn" : "fav-btn"} onClick={this.handleFav}>
+                                    {fav ? "Un-favorites" : 'Favorite'}
+                                </button>
+
+                                {/* add to card or remove from cart button  */}
+                                <button className={cart ? "remove-from-cart-btn" : "add-to-cart-btn"} onClick={this.handleCart}>
+                                    {cart ? "Remove From Cart" : "Add To Cart"}
+                                </button>
                             </div>
                         </div>
                     </div>

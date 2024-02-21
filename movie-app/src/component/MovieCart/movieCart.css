@@ -123,13 +123,26 @@ body{
     /* color: #fff; */
 }
 
-.cart-btn{
+.unfav-btn{
+    background-color: red;
+    color: #fff;
+    text-shadow: none;
+    margin: 5px;
+}
+
+.add-to-cart-btn{
     background-color: #cbe2f5;
 }
 
+.remove-from-cart-btn{
+    background-color: red;
+    color: #fff;
+    text-shadow: none;
+    margin: 5px;
+}
 
 button:hover {
-    border-color: black;
+    color: black;
     background-color: rgb(178, 255, 178);
 }
   
