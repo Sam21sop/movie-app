@@ -1,0 +1,41 @@
+.navbar{
+    height:50px;
+    width:100%;
+    background:linear-gradient(260deg, #df5fc3, #71a5f3);
+    justify-content:space-between;
+    display:flex;
+    position: relative;
+    align-items:centre;
+    padding:10px;
+}
+
+.title{
+    font-size:30px;
+    color:black;
+    font-weight:600;
+    font-family:sans-serif Montserrate;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.cart_container{
+    position:relative;
+    cursor:pointer;
+    right:10px;
+}
+
+.cart_img_icon{
+    height:50px;
+    margin-right:25px;
+}
+
+.cart_item_count{
+    background-color: #3aff20;
+    color:black;
+    border-radius:50%;
+    padding:2px 8px;
+    position:absolute;
+    right:20px;
+    top:-5px;
+    font-size:12px;
+}
